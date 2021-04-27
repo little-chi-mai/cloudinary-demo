@@ -1,6 +1,8 @@
 <h1><%= @brand.name %></h1>
 
-<%= cl_image_tag @brand.image %>
+
+<%=# This tag is for single image %>
+<%=# cl_image_tag @brand.image %>
 
 <% @brand.images.each do |image| %>
     <%= cl_image_tag image %>
